@@ -1,9 +1,14 @@
 package ltd.icecold.icevideo;
 
+import com.sun.jna.NativeLibrary;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.lwjgl.Version;
+import uk.co.caprica.vlcj.binding.LibVlc;
+import uk.co.caprica.vlcj.binding.RuntimeUtil;
+import uk.co.caprica.vlcj.factory.discovery.NativeDiscovery;
 
 /**
  * @author icecold

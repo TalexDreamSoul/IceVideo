@@ -1,8 +1,10 @@
 package ltd.icecold.icevideo;
 
+import com.sun.jna.NativeLibrary;
 import com.sun.jna.Pointer;
 import net.minecraft.client.Minecraft;
 import org.lwjgl.opengl.GL;
+import uk.co.caprica.vlcj.binding.RuntimeUtil;
 import uk.co.caprica.vlcj.factory.MediaPlayerFactory;
 import uk.co.caprica.vlcj.player.embedded.EmbeddedMediaPlayer;
 import uk.co.caprica.vlcj.player.embedded.videosurface.VideoEngineVideoSurface;
@@ -29,6 +31,7 @@ public class Video {
     private long window;
 
     public Video() {
+        NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(),"C:\\Users\\gd\\Desktop\\vlc");
         this.videoEngineCallback =  new VideoEngineHandler();
         this.window = Minecraft.getInstance().getMainWindow().getHandle();
         this.mediaPlayerFactory = new MediaPlayerFactory();
