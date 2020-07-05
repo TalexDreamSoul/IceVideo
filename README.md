@@ -1,7 +1,7 @@
 # IceVideo
 Play Video In Minecraft Window
 
-![TEST GIF](https://cdn.jsdelivr.net/gh/gdenga/WebImages@master/blog/test2.gif)
+![TEST GIF](https://github.com/gdenga/IceVideo/blob/master/test.gif)
 
 ## 实现
 
