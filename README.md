@@ -20,7 +20,6 @@ Play Video In Minecraft Window
 FFmpegFrameGrabber fFmpegFrameGrabber = new FFmpegFrameGrabber(new File("1.mp4"));
 fFmpegFrameGrabber.start();
 int ftp = fFmpegFrameGrabber.getLengthInFrames();
-System.out.println("时长 " + ftp / fFmpegFrameGrabber.getFrameRate() / 60);
 double fps = fFmpegFrameGrabber.getFrameRate();
 long sleepCnt = (int) (1000/fps);
 ```
