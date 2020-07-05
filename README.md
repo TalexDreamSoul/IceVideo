@@ -1,6 +1,8 @@
 # IceVideo
 Play Video In Minecraft Window
 
+![TEST GIF](https://github.com/gdenga/IceVideo/blob/master/test.gif)
+
 ## 实现
 
 目前使用[vlcj-5](https://github.com/caprica/vlcj "vlcj-5")的回调实现
