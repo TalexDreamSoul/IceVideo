@@ -12,11 +12,11 @@ import java.nio.charset.StandardCharsets;
 /**
  * @author ice-cold
  */
-public class MusicPlayer {
+public class NetworkHandler {
     public static final int IDX = 233;
     private SimpleChannel channel;
 
-    public MusicPlayer() {
+    public NetworkHandler() {
         channel = NetworkRegistry.ChannelBuilder
                 .named(new ResourceLocation("ice_video_test", "message"))
                 .networkProtocolVersion(() -> "ice")

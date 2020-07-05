@@ -16,6 +16,6 @@ public class IceVideo {
         MinecraftForge.EVENT_BUS.register(this);
     }
     private void clientSetup(FMLClientSetupEvent event) {
-        new MusicPlayer();
+        new NetworkHandler();
     }
 }
