@@ -31,7 +31,7 @@ public class Video {
     private long window;
 
     public Video() {
-        NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(),"C:\\Users\\gd\\Desktop\\vlc");
+        //NativeLibrary.addSearchPath(RuntimeUtil.getLibVlcLibraryName(),"C:\\Users\\gd\\Desktop\\vlc");
         this.videoEngineCallback =  new VideoEngineHandler();
         this.window = Minecraft.getInstance().getMainWindow().getHandle();
         this.mediaPlayerFactory = new MediaPlayerFactory();
@@ -49,7 +49,6 @@ public class Video {
         mediaPlayer.release();
         mediaPlayerFactory.release();
         glfwFreeCallbacks(window);
-        glfwDestroyWindow(window);
     }
 
 
@@ -80,8 +79,6 @@ public class Video {
                 try {
                     contextSemaphore.acquire();
                     glfwMakeContextCurrent(window);
-                } catch (InterruptedException e) {
-                    return false;
                 } catch (Exception e) {
                     glfwMakeContextCurrent(0L);
                     contextSemaphore.release();

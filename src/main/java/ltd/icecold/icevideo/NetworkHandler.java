@@ -38,6 +38,6 @@ public class NetworkHandler {
         NetworkEvent.Context context = ctx.get();
         context.setPacketHandled(true);
         Video video = new Video();
-        video.playVideo("3.flv");
+        video.playVideo("2020-07-05 14-39-46.mp4");
     }
 }
